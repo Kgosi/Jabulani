@@ -1,0 +1,62 @@
+﻿<Articles>
+  <Article>
+    <ImageURL>Images\temp\1.jpeg</ImageURL>
+    <ImageCaption>POOR JAY CARNEY</ImageCaption>
+    <Heading>White House Defends Spying On You</Heading>
+    <Source>Yahoo! News</Source>
+    <Genre>News</Genre>
+    <Content>The White House on Thursday defended the National Security Agency's need to collect telephone records of U.S. citizens, calling such information "a critical tool in protecting the nation from terrorist threats.</Content>
+    <Position>1</Position>
+    <Link>http://gizmodo.com/the-white-house-were-happy-for-the-nsa-to-spy-on-your-511617288</Link>
+  </Article>
+  <Article>
+    <ImageURL>Images\temp\2.jpeg</ImageURL>
+    <ImageCaption>CAUGHT ON CAMERA</ImageCaption>
+    <Heading>Man Tries To Commit Suicide Outside The 'Today Show'</Heading>
+    <Source>NY Daily News</Source>
+    <Genre>Video</Genre>
+    <Content>A man in a crowd gathered at Rockefeller Plaza to watch 'The Today Show' tried to kill himself by cutting his wrists Wednesday morning, police said.</Content>
+    <Position>2</Position>
+    <Link>http://hollywoodlife.com/2013/06/06/today-show-suicide-attempt-knife/</Link>
+  </Article>
+  <Article>
+    <ImageURL>Images\temp\3.jpeg</ImageURL>
+    <ImageCaption>STARTUPS WE DIGG (SPONSORED)</ImageCaption>
+    <Heading>How To Look Smart And Be Smart</Heading>
+    <Source>frankandoak.com</Source>
+    <Genre>Apps We Digg</Genre>
+    <Content>Nobody ever said looking good had to be expensive. And if they did, they're liars.</Content>
+    <Position>3</Position>
+    <Link>http://www.wikihow.com/Act-and-Look-Smart</Link>
+  </Article>
+  <Article>
+    <ImageURL>Images\temp\4.jpeg</ImageURL>
+    <ImageCaption>WE RESPECTFULLY DISAGREE</ImageCaption>
+    <Heading>Here's Why Google Reader Really Got The Axe</Heading>
+    <Source>Wired</Source>
+    <Genre>Media</Genre>
+    <Content>There’s another reason Google decided to put its RSS reader to death.</Content>
+    <Position>1</Position>
+    <Link>http://www.librarystuff.net/2013/06/06/heres-why-google-reader-really-got-the-axe/</Link>
+  </Article>
+  <Article>
+    <ImageURL>Images\temp\5.jpeg</ImageURL>
+    <ImageCaption>WHAT'S THE DEAL WITH HUMANS</ImageCaption>
+    <Heading>This Is Data, The World's First Comedy Bot</Heading>
+    <Source>GQ</Source>
+    <Genre>Technology</Genre>
+    <Content>They're drone-striking Afghanistan for us. They're replacing us on the assembly line at the Hostess plant. They're even cutting into our aortas during life-or-death surgery. But can robots master one of the most mysterious—and quintessentially human—skills of them all: making people laugh</Content>
+    <Position>2</Position>
+    <Link>http://www.ocshare.com/news/this-is-data-the-worlds-first-comedy-bot/</Link>
+  </Article>
+  <Article>
+    <ImageURL>Images\temp\6.jpeg</ImageURL>
+    <ImageCaption>SADISTIC PLEASURE</ImageCaption>
+    <Heading>George R. R. Martin Watches 'Red Wedding' Reaction Videos</Heading>
+    <Source>Team Coco</Source>
+    <Genre>TV</Genre>
+    <Content>How does the "Game of Thrones" author react to fan freakouts? With chuckling delight.</Content>
+    <Position>3</Position>
+    <Link>http://www.uproxx.com/tv/2013/06/george-r-r-martin-reacts-to-red-wedding-reaction-videos/</Link>
+  </Article>
+</Articles>

@@ -1,0 +1,36 @@
+/* Fisheye Menu Styles */
+#fisheye_menu {
+	margin: auto;
+	height: auto;
+    margin-left:10em;
+    margin-bottom:2em;
+    font-size:1.5em;
+}
+#fisheye_menu li {
+	position: relative;
+	display: block;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+#fisheye_menu span {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	text-align: center;
+	width: 79px;
+	padding: 1px;
+	margin: 0;
+	border: solid 1px #bbb;	
+}
+#fisheye_menu a {
+    position:absolute;
+    margin-left:-6.5em;
+    margin-top:2.8em;
+    color:white;
+    font-size:1em;
+}
+#fisheye_menu img {
+	border: 0;
+	vertical-align: top;
+}

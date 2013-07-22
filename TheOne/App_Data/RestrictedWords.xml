@@ -1,0 +1,21 @@
+﻿<RestrictedList>
+  <Restricted>KIDNAP</Restricted>
+  <Restricted>DIE</Restricted>
+  <Restricted>KILL</Restricted>
+  <Restricted>SUSPECT</Restricted>
+  <Restricted>DEAD</Restricted>
+  <Restricted>HAUNT</Restricted>
+  <Restricted>SLAM</Restricted>
+  <Restricted>WARN</Restricted>
+  <Restricted>ILLEGAL</Restricted>
+  <Restricted>ARREST</Restricted>
+  <Restricted>CORRUPT</Restricted>
+  <Restricted>DEATH</Restricted>
+  <Restricted>FURY</Restricted>
+  <Restricted>SUSPEND</Restricted>
+  <Restricted>BANKRUPT</Restricted>
+  <Restricted>HOSTAGE</Restricted>
+  <Restricted>STAB</Restricted>
+  <Restricted>TERROR</Restricted>
+  <Restricted>ROBBE</Restricted>
+</RestrictedList>

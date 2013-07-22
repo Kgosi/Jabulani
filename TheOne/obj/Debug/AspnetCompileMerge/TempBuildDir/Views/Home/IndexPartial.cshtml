@@ -1,0 +1,73 @@
+﻿@{
+    <div id="body">
+        @Html.ActionLink("Jabulani", "Index", new { Controller = "Home" }, new { @class = "logo" })
+        <!--Content Start-->
+        @foreach (var item in Model)
+        {
+            if (item.isMain)
+            {
+            <a class="iframe" href="@item.link">
+                <div class="main">
+                    <div class="main-image">
+                        <img src="@item.imageUrl"/>
+                    </div>
+                    <div class="main-heading">@item.heading</div>
+                    <div class="main-text">@item.content</div>
+                    <div class="main-source">@item.source</div>
+                    <div class="main-pub">@item.pubDate</div>
+                </div>
+            </a>
+            }
+        }
+        <div class="phrase">
+            <div class="phrasestart">Positive News.</div><div class="phraseend">Positive Thinking.</div>
+        </div>
+        <div id="content_1" class="content">
+            @{ var rnd = new Random();
+               int counter = rnd.Next(0, Model.Count);
+               for (int i = 1; i < Model.Count; i++)
+               {
+                   if (!Model[i].isMain)
+                   {
+                <a class="iframe" href="@Model[i].link">
+                    <table>
+                        <tr>
+                            <td style="display: inline-block">
+                                <img src="@Model[i].imageUrl" class="article-content-img" onerror="this.onerror=null;this.src='Images/NoImage.jpg'" />
+                                <div class="article-source">@Model[i].source</div>
+                            </td>
+                            <td>
+                                <div class="article-content">
+                                    <div class="article-heading">@Model[i].heading</div>
+                                    <div class="article-text">@Model[i].content</div>
+                                    <div class="article-pub">@Model[i].pubDate</div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </a>
+                   }
+               }
+            }
+        </div>
+
+        <!-- Content End -->
+
+        <!--Social Start -->
+
+        <div class="social">
+            The One<br />
+            T: +27 11 234 5678 | info@jabulaninews.com
+        </div>
+        <div class="social-images">
+            <br />
+            <a href="https://twitter.com/jbnews13">
+                <img src="~/Images/twitter.png" /></a>
+            <img src="~/Images/facebook.png" />
+            <img src="~/Images/linkedin.png" />
+            <img src="~/Images/google-plus.png" />
+        </div>
+
+        <!-- Social End -->
+    </div>
+}

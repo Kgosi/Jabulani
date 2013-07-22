@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title</title>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Fonts/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+</head>
+<body>
+    @RenderBody()
+    <footer>
+        <div class="content-wrapper">
+            <p>&copy; @DateTime.Now.Year - The One</p>
+        </div>
+    </footer>
+</body>
+<script type="text/javascript">
+    $(window).load(function () {
+
+        //Remove images
+        var images = $('.article-content-img');
+        images.each(function () {
+            if ($(this).attr('src') === undefined) {
+                $(this).parent().attr('style', 'display:none');
+            }
+            else {
+                if ($(this).attr('src') === "Images/NoImage.jpg") {
+                    $(this).parent().attr('style', 'display:none');
+                }
+            }
+        });
+    });
+
+    //Scroll bar
+    (function ($) {
+        $(document).ready(function () {
+            $("#content_1").mCustomScrollbar({
+                scrollButtons: {
+                    enable: true
+                },
+                theme: "dark"
+            });
+
+            //Lettering of logo
+            $('.logo').lettering();
+
+            var counter = 1;
+            $('.logo span').each(function () {
+                if (counter % 2 === 0) {
+                    $(this).attr('style', 'color:#39B7CD');
+                }
+                else {
+                    $(this).attr('style', 'color:#708090');
+                }
+                counter++;
+            });
+
+            $(".iframe").colorbox({ iframe: true, width: "80%", height: "80%" });
+
+            //$('img.article-content-img').lazyload();
+
+            $('.kwicks').kwicks({
+                maxSize: 200,
+                behavior: 'menu'
+            });
+
+            $('#Ent').click(function () {
+                $('#body').html('');
+                $('.loading').attr('style', '');
+                $('#body').load("/Home/Entertainment", function () {
+                    $('.loading').attr('style', 'display:none');
+                    ReloadStyling();
+                });
+            });
+
+            $('#Bus').click(function () {
+                $('#body').html('');
+                $('.loading').attr('style', '');
+                $('#body').load("/Home/Business", function () {
+                    $('.loading').attr('style', 'display:none');
+                    ReloadStyling();
+                });
+            });
+
+            $('#Lif').click(function () {
+                $('#body').html('');
+                $('.loading').attr('style', '');
+                $('#body').load("/Home/Lifestyle", function () {
+                    $('.loading').attr('style', 'display:none');
+                    ReloadStyling();
+                });
+            });
+
+            $('#Spo').click(function () {
+                $('#body').html('');
+                $('.loading').attr('style', '');
+                $('#body').load("/Home/Sports", function () {
+                    $('.loading').attr('style', 'display:none');
+                    ReloadStyling();
+                });
+            });
+
+            $('#Tec').click(function () {
+                $('#body').html('');
+                $('.loading').attr('style', '');
+                $('#body').load("/Home/Technology", function () {
+                    $('.loading').attr('style', 'display:none');
+                    ReloadStyling();
+                });
+            });
+        });
+    })(jQuery);
+
+    function ReloadStyling() {
+        $("#content_1").mCustomScrollbar({
+            scrollButtons: {
+                enable: true
+            },
+            theme: "dark"
+        });
+
+        //Lettering of logo
+        $('.logo').lettering();
+
+        var counter = 1;
+        $('.logo span').each(function () {
+            if (counter % 2 === 0) {
+                $(this).attr('style', 'color:#39B7CD');
+            }
+            else {
+                $(this).attr('style', 'color:#708090');
+            }
+            counter++;
+        });
+
+        $(".iframe").colorbox({ iframe: true, width: "80%", height: "80%" });
+    }
+
+</script>
+</html>

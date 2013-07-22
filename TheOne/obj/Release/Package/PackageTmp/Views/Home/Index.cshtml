@@ -1,0 +1,20 @@
+﻿@{
+    <div id="fisheye_menu" class="kwicks kwicks-horizontal">
+        @*        @Html.ActionLink("Entertainment", "Entertainment", "Home", new { @class = "greypanel" })
+        @Html.ActionLink("Business", "Business", "Home", new { @class = "bluepanel" })
+        @Html.ActionLink("Lifestyle", "Lifestyle", "Home", new { @class = "greypanel" })
+        @Html.ActionLink("Sports", "Sports", "Home", new { @class = "bluepanel" })
+        @Html.ActionLink("Technology", "Technology", "Home", new { @class = "greypanel" })*@
+        <a id="Ent" class="greypanel">Entertainment</a>
+        <a id="Bus" class="bluepanel">Business</a>
+        <a id="Lif" class="greypanel">Lifestyle</a>
+        <a id="Spo" class="bluepanel">Sports</a>
+        <a id="Tec" class="greypanel">Technology</a>
+        <a></a>
+    </div>
+    <div class="shadow">
+        <img class="loading" style="display:none" src="~/Images/loading.gif" />
+        @Html.ActionLink("Jabulani", "Index", new { Controller = "Home" }, new { @class = "logo" })
+        @Html.Partial("IndexPartial")
+    </div>
+}

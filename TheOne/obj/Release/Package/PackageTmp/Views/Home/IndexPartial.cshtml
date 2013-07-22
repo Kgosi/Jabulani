@@ -1,0 +1,54 @@
+﻿@{
+    <div id="body">
+        @*<a href="/Home/Index">
+            <div class="logo">Jabulani</div>
+        </a>*@
+        <a class="iframe" href="@Model[0].link">
+            <div class="main">
+                <div class="main-image">
+                    <img data-original="img/example.jpg" src="@Model[0].imageUrl"/>
+                </div>
+                <div class="main-heading">@Model[0].heading</div>
+                <div class="main-text">@Model[0].content</div>
+                <div class="main-source">@Model[0].source</div>
+                <div class="main-pub">@Model[0].pubDate</div>
+            </div>
+        </a>
+        <div id="content_1" class="content">
+            @{ var rnd = new Random();
+               int counter = rnd.Next(0, Model.Count);
+               for (int i = 1; i < Model.Count; i++)
+               {
+                <a class="iframe" href="@Model[i].link">
+                    <table>
+                        <tr>
+                            <td style="display: inline-block">
+                                <img data-original="img/example.jpg" src="@Model[i].imageUrl" class="article-content-img" onerror="this.onerror=null;this.src='Images/NoImage.jpg'" />
+                                <div class="article-source">@Model[i].source</div>
+                            </td>
+                            <td>
+                                <div class="article-content">
+                                    <div class="article-heading">@Model[i].heading</div>
+                                    <div class="article-text">@Model[i].content</div>
+                                    <div class="article-pub">@Model[i].pubDate</div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </a>
+               }
+            }
+        </div>
+        <div class="social">
+            The One<br />
+            T: +27 11 234 5678 | info@theone.com
+        </div>
+        <div class="social-images">
+            <br />
+            <img src="~/Images/twitter.png" />
+            <img src="~/Images/facebook.png" />
+            <img src="~/Images/linkedin.png" />
+            <img src="~/Images/google-plus.png" />
+        </div>
+    </div>
+}
